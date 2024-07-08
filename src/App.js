@@ -50,9 +50,8 @@ function App() {
 
  
   const router=createBrowserRouter([
-    {path:'/',element:<Home />},
     {path:'/signup', element:<Signup user={user}/>},
-    {path:'/login', element:<Login setuser={setuser}/>},
+    {path:'/', element:<Login setuser={setuser}/>},
     {path:'/dashboard',element:<Dashboard user={user} />},
     {path:'/cart',element:<AddtoCart Cart={cart} user={user}  updateCart={updateCart} />},
     {path:'/dashboard/:id',element:<Productpage user={user}  Addtocart={getItem} />},
