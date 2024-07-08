@@ -17,7 +17,7 @@ function Signup() {
       email: email
     }).then((res) => {
       console.log(res);
-      navigate('/login');
+      navigate('/');
     }).catch(err => {
       if (err) {
         console.log(err.response.data.msg);
@@ -67,7 +67,7 @@ function Signup() {
         <div className="flex justify-between mt-4">
           <Link 
             className='bg-gray-300 p-2 text-sm rounded-md font-semibold hover:bg-gray-400 transition duration-200' 
-            to="/login"
+            to="/"
           >
             Already a user? Log In
           </Link>
